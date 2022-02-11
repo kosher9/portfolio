@@ -78,6 +78,7 @@ ul {
 .ic-container {
   display: flex;
   margin-top: 12px;
+  padding-left: 0;
   justify-content: flex-start;
   gap: 20px;
 }
