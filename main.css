@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 body {
-  background: #ffff;
+  background: #E5E5E5;
+  margin: 0;
   font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .navbar {
@@ -24,6 +29,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  text-decoration: none;
 
   /* identical to box height, or 111% */
   display: flex;
@@ -35,6 +41,9 @@ body {
 }
 
 .hero {
+  background-image: url("img/header-shapes-mobile.png"), url("img/header-background-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 100% 100%; 
   padding-top: 114px;
   padding-bottom: 114px;
   padding-left: 24px;
