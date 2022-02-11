@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-body{
-  background: #FFFF;
-  font-family: Poppins;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+  background: #ffff;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar{
-  background: #FFFF;
+.navbar {
+  background: #ffff;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.container{
+.container {
   display: flex;
-  place-content: space-between
+  place-content: space-between;
 }
 
 .logo {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -31,12 +32,53 @@ body{
 
   /* Primary/B400 */
   color: #6070ff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px;
 }
 
+.hero {
+  padding-top: 114px;
+  padding-bottom: 114px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
+.fsthead {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.cnt-txt {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.ic-container {
+  display: flex;
+  margin-top: 12px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.ic-social-media {
+  display: block;
+  max-width: 20px;
+  max-height: 20px;
+  width: auto;
+  height: auto;
+}
