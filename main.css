@@ -274,23 +274,6 @@ ul {
   margin: auto;
 }
 
-.footer {
-  background-image:
-    url("img/header-shapes-mobile.png"),
-    url("img/contact_me.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, 100% 100%;
-  padding-top: 114px;
-  padding-bottom: 114px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.container-footer {
-  padding: 16px 16px 28px 16px;
-  text-align: center;
-}
-
 .container-form {
   display: flex;
   row-gap: 18px;
