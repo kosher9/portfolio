@@ -41,9 +41,21 @@ ul {
 }
 
 .hero {
-  background-image: url("img/header-shapes-mobile.png"), url("img/header-background-mobile.png");
+  background-image: url("img/header-shapes-mobile.png"),
+    url("img/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
+  padding-top: 114px;
+  padding-bottom: 114px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pre-footer{
+  background-image: url("img/base-about-my-self.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 114px;
   padding-top: 114px;
   padding-bottom: 114px;
   padding-left: 24px;
@@ -89,4 +101,111 @@ ul {
   max-height: 20px;
   width: auto;
   height: auto;
+}
+
+.project-container-1 {
+  border-radius: 16px;
+  background-color: #ffff;
+  margin-top: 114px;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 16px 16px 28px 16px;
+  text-align: center;
+}
+
+.prjct {
+  text-align: left;
+}
+
+.left {
+  margin: 12px auto auto 0;
+  font-weight: 700;
+  color: #172b4d;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.grid-container {
+  display: grid;
+  align-content: center;
+  width: 300px;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+}
+
+.prjct-name {
+  font-family: Poppins, arial;
+  text-align: center;
+  vertical-align: middle;
+  color: #344563;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.prjct-role {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.prjct-year {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.prjct-descr {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 20px;
+}
+
+.prjct-lg {
+  background: #ebebff;
+  border-radius: 8px;
+  display: block;
+  color: #6070FF;
+  padding: 4px 12px;
+}
+
+.container-lg {
+  display: flex;
+  margin-top: 12px;
+  padding-left: 0;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.see-project{
+  border-color: #6070FF;
+  border-radius: 10px;
+  color: #6070FF;
+}
+
+.see-project:hover{
+  background-color: #6070FF;
+  color: white;
+}
+
+.btn-container{
+  text-align: left;
 }
