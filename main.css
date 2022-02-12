@@ -41,7 +41,8 @@ ul {
 }
 
 .hero {
-  background-image: url("img/header-shapes-mobile.png"),
+  background-image:
+    url("img/header-shapes-mobile.png"),
     url("img/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
@@ -122,9 +123,8 @@ ul {
   margin: 12px auto auto 0;
   font-weight: 700;
   color: #172b4d;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 32px;
   line-height: 44px;
 }
@@ -138,7 +138,7 @@ ul {
 }
 
 .prjct-name {
-  font-family: Poppins, arial;
+  font-family: Poppins, sans-serif;
   text-align: center;
   vertical-align: middle;
   color: #344563;
@@ -147,21 +147,21 @@ ul {
 }
 
 .prjct-role {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #7a869a;
 }
 
 .prjct-year {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #7a869a;
 }
 
 .prjct-descr {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -216,11 +216,11 @@ ul {
 }
 
 .txt-lg {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  color: #000000;
+  color: #000;
 }
 
 .arrow {
@@ -247,7 +247,7 @@ ul {
 .txt-lst-lg {
   margin-left: 16px;
   color: #253858;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -260,7 +260,8 @@ ul {
 }
 
 .footer {
-  background-image: url("img/header-shapes-mobile.png"),
+  background-image:
+    url("img/header-shapes-mobile.png"),
     url("img/contact_me.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
@@ -286,7 +287,7 @@ ul {
   height: 20px;
   padding: 12px 20px;
   border: 1px solid #cfd8dc;
-  background: #ffffff;
+  background: #fff;
   background-color: #f8f8f8;
   border-radius: 8px;
   resize: none;
@@ -295,36 +296,45 @@ ul {
 .text-area:focus {
   outline: none !important;
   box-shadow: 0 0 10px #719ece;
-  border-color: 1px solid #cfd8dc;
+  border: 1px solid #cfd8dc;
 }
 
 .text-area::placeholder {
-  font-family: Poppins, Arial;
+  font-family: Poppins, sans-serif;
 }
 
 .large {
   height: 80px;
 }
+
 .txt-ctct-me {
   font-size: 40px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .ctct-me {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   color: #ebebff;
 }
 
-.get-touch{
+.get-touch {
   border-color: #6070ff;
   border-radius: 10px;
   color: #6070ff;
 }
 
-.get-touch:hover{
+.get-touch:hover {
   background-color: #7884f0;
   color: #fff;
+}
+
+hr {
+  margin-top: 23px;
+  height: 1px;
+  border-width: 0;
+  color: #dfe1e6;
+  background-color: #dfe1e6;
 }
