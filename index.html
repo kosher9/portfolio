@@ -36,10 +36,11 @@
     </ul>
   </section>
 
+  <section class="grid-project">
 
   <!--First container-->
 
-  <div class="project-container-1">
+  <section class="project-container-1">
     <div class="img-1-container">
       <a href=""><img src="img/Portfolio_1.png" alt="project preview"></a>
     </div>
@@ -48,9 +49,9 @@
 
     <div class="prjct grid-container">
       <h4 class="prjct-name">CANOPY</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-role">Back End Dev</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-year">2015</h4>
     </div>
 
@@ -64,13 +65,13 @@
     </ul>
 
     <div class="btn-container"><button class="prjct btn see-project" type="button">See Project</button></div>
-  </div>
+  </section>
 
 
   <!--Second container-->
 
 
-  <div class="project-container-1">
+  <section class="project-container-1">
     <div class="img-1-container">
       <a href=""><img src="img/Portfolio_2.png"  alt="project preview"></a>
     </div>
@@ -80,9 +81,9 @@
 
     <div class="prjct grid-container">
       <h4 class="prjct-name">CANOPY</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-role">Back End Dev</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-year">2015</h4>
     </div>
 
@@ -96,13 +97,13 @@
     </ul>
 
     <div class="btn-container"><button class="prjct btn see-project" type="button">See Project</button></div>
-  </div>
+  </section>
 
 
   <!--Third container-->
 
 
-  <div class="project-container-1">
+  <section class="project-container-1">
     <div class="img-1-container">
       <a href=""><img src="img/Portfolio_3.png"  alt="project preview"></a>
     </div>
@@ -111,9 +112,9 @@
 
     <div class="prjct grid-container">
       <h4 class="prjct-name">CANOPY</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-role">Back End Dev</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-year">2015</h4>
     </div>
 
@@ -127,7 +128,7 @@
     </ul>
 
     <div class="btn-container"><button class="prjct btn see-project" type="button">See Project</button></div>
-  </div>
+  </section>
 
 
   <!--Fourth container-->
@@ -143,9 +144,9 @@
 
     <div class="prjct grid-container">
       <h4 class="prjct-name">CANOPY</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-role">Back End Dev</h4>
-      <div><img src="img/counter.png" alt="dot"></div>
+      <div class="dot-container"><img class="dot" src="img/counter.png" alt="dot"></div>
       <h4 class="prjct-year">2015</h4>
     </div>
 
@@ -160,6 +161,8 @@
 
     <div class="btn-container"><button class="prjct btn see-project" type="button">See Project</button></div>
   </section>
+  </section>
+
 
   <section class="about-section">
     <div class="container">
@@ -177,39 +180,55 @@
       <li><a href=""><img class="ic-social-media" src="img/vec.png" alt="vector"></a></li>
     </ul>
     <div class="btn-container"><button class="prjct btn see-project" type="button">Get my resume</button></div>
-    <div class="container lg">
-      <h4 class="txt-lg">Languages</h4>
-      <img class="arrow" src="img/arrow_bottom.png" alt="showmore">
-    </div>
+    <ul>
+      <li>
+        <div class="container lg">
+          <h4 class="txt-lg">Languages</h4>
+          <div class="container-arrow-right">
+            <img class="arrow" src="img/arrow_bottom.png" alt="showmore">
+          </div>
+        </div>
+        <ul class="lg-lst-main-container">
+          <li>
+            <div class="lg-lst-container">
+              <img class="lg-logo" src="img/js_logo.png" alt="js logo">
+              <h4 class="txt-lst-lg">JavaScript</h4>
+            </div>
+          </li>
+          <li>
+            <div class="lg-lst-container">
+              <img class="lg-logo" src="img/html_logo.png" alt="js logo">
+              <h4 class="txt-lst-lg">HTML</h4>
+            </div>
+          </li>
+          <li>
+            <div class="lg-lst-container">
+              <img class="lg-logo" src="img/css_logo.png" alt="js logo">
+              <h4 class="txt-lst-lg">CSS</h4>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="container lg">
+          <h4 class="txt-lg">Frameworks</h4>
+          <div class="container-arrow-right">
+            <img class="arrow-right" src="img/arrow_right.png" alt="showmore">
+          </div>
+        </div>
+        <hr>
+      </li>
+      <li>
+        <div class="container lg">
+          <h4 class="txt-lg">Skills</h4>
+          <div class="container-arrow-right">
+            <img class="arrow-right" src="img/arrow_right.png" alt="showmore">
+          </div>
+        </div>
+        <hr>
+      </li>
 
-    <div class="lg-lst-main-container">
-      <div class="lg-lst-container">
-        <img class="lg-logo" src="img/js_logo.png" alt="js logo">
-        <h4 class="txt-lst-lg">JavaScript</h4>
-      </div>
-      <div class="lg-lst-container">
-        <img class="lg-logo" src="img/html_logo.png" alt="js logo">
-        <h4 class="txt-lst-lg">HTML</h4>
-      </div>
-      <div class="lg-lst-container">
-        <img class="lg-logo" src="img/css_logo.png" alt="js logo">
-        <h4 class="txt-lst-lg">CSS</h4>
-      </div>
-    </div>
-
-    <div class="container lg">
-      <h4 class="txt-lg">Frameworks</h4>
-      <img class="arrow-right" src="img/arrow_right.png" alt="showmore">
-    </div>
-
-    <hr>
-
-    <div class="container lg">
-      <h4 class="txt-lg">Skills</h4>
-      <img class="arrow-right" src="img/arrow_right.png" alt="showmore">
-    </div>
-
-    <hr>
+    </ul>
 
   </section>
 </body>

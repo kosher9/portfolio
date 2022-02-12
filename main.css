@@ -104,7 +104,15 @@ ul {
   height: auto;
 }
 
+.grid-project{
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .project-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   border-radius: 16px;
   background-color: #ffff;
   border: 1px solid #dfe1e6;
@@ -113,6 +121,15 @@ ul {
   margin-right: 14px;
   padding: 16px 16px 28px 16px;
   text-align: center;
+}
+
+.dot-container{
+  display: flex;
+  justify-content: center;
+}
+
+.dot{
+  margin: auto;
 }
 
 .prjct {
@@ -226,8 +243,7 @@ ul {
 .arrow {
   width: 14px;
   height: 8px;
-  display: block;
-  margin-top: 10px;
+  margin: auto;
 }
 
 .lg-lst-main-container {
@@ -255,8 +271,7 @@ ul {
 .arrow-right {
   width: 8px;
   height: 14px;
-  display: block;
-  margin-top: 10px;
+  margin: auto;
 }
 
 .footer {
@@ -337,4 +352,9 @@ hr {
   border-width: 0;
   color: #dfe1e6;
   background-color: #dfe1e6;
+}
+
+.container-arrow-right{
+  display: flex;
+  justify-content: center;
 }
