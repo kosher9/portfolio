@@ -104,7 +104,7 @@ ul {
   height: auto;
 }
 
-.grid-project{
+.grid-project {
   display: grid;
   grid-template-columns: auto;
 }
@@ -123,12 +123,12 @@ ul {
   text-align: center;
 }
 
-.dot-container{
+.dot-container {
   display: flex;
   justify-content: center;
 }
 
-.dot{
+.dot {
   margin: auto;
 }
 
@@ -354,7 +354,7 @@ hr {
   background-color: #dfe1e6;
 }
 
-.container-arrow-right{
+.container-arrow-right {
   display: flex;
   justify-content: center;
 }
