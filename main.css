@@ -193,13 +193,13 @@ ul {
   display: block;
   color: #6070ff;
   padding: 4px 12px;
+  float: left;
+  margin-left: 5px;
 }
 
 .container-lg {
-  display: flex;
   margin-top: 12px;
   padding-left: 0;
-  justify-content: flex-start;
   gap: 20px;
 }
 
