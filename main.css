@@ -341,3 +341,21 @@ hr {
   display: flex;
   justify-content: center;
 }
+
+.contact {
+  background-image:
+    url("img/header-shapes-mobile.png"),
+    url("img/contact_me.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 100% 100%;
+  padding-top: 114px;
+  padding-bottom: 114px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.container-form{
+  display: flex;
+}
+
+
