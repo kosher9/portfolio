@@ -315,6 +315,7 @@ ul {
 .txt-ctct-me {
   font-size: 40px;
   color: #fff;
+  text-align: center;
 }
 
 .ctct-me {
@@ -323,6 +324,7 @@ ul {
   font-weight: normal;
   font-size: 20px;
   color: #ebebff;
+  text-align: center;
 }
 
 .get-touch {
