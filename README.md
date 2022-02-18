@@ -20,6 +20,9 @@
 - GitHub: [@kosher9](https://github.com/misheck12)
 - GitHub: [@kosher9](https://github.com/Theophileaseh)
 
+## Getting Started
+
+Clown the project on your computer and open the index.html file in your browser.
 
 ## 🤝 Contributing
 
