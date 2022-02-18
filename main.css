@@ -235,6 +235,7 @@ ul {
 .see-project:hover {
   background-color: #6070ff;
   color: white;
+  transition: all 0.5s ease-out;
 }
 
 .btn-container {
@@ -351,6 +352,7 @@ ul {
 .get-touch:hover {
   background-color: #7884f0;
   color: #fff;
+  transition: all 0.5s ease-out;
 }
 
 hr {
@@ -387,6 +389,7 @@ hr {
 .contact-btn:hover {
   background-color: #97a1f5;
   color: white;
+  transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width: 1100px) and (min-width: 992px) {
