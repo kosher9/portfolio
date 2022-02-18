@@ -43,12 +43,14 @@ ul {
   /* Primary/B400 */
   color: #6070ff;
 }
+
 .nav-menu {
   display: none;
 }
 
 .hero {
-  background-image: url("img/header-shapes-mobile.png"),
+  background-image:
+    url("img/header-shapes-mobile.png"),
     url("img/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
@@ -238,7 +240,6 @@ ul {
 .btn-container {
   text-align: left;
   border-radius: 8px;
-  border-radius: 8px;
   border: none;
   color: #6070ff;
   font-family: "Poppins", sans-serif;
@@ -366,7 +367,8 @@ hr {
 }
 
 .contact {
-  background-image: url("img/header-shapes-mobile.png"),
+  background-image:
+    url("img/header-shapes-mobile.png"),
     url("img/contact_me.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
@@ -389,24 +391,25 @@ hr {
 
 @media screen and (max-width: 1100px) and (min-width: 992px) {
   .fsthead {
-    margin: 359px 260px 0px 260px;
+    margin: 0 260px 0 142px;
   }
 
   .intro {
-    margin: 12px 260px 0px;
+    margin: 12px 0 0 142px;
   }
 
   .cnt-txt {
-    margin: 12px 260px;
+    margin: 12px 0 0 142px;
   }
 
   .ic-container {
-    margin: 14px 260px;
+    margin: 25px 0 0 142px;
   }
 
   .union-img {
     display: none;
   }
+
   .nav-menu {
     display: flex;
     gap: 32px;
@@ -453,24 +456,8 @@ hr {
     width: 50%;
   }
 
-  .fsthead {
-    margin: 0px 260px 0px 142px;
-  }
-
-  .intro {
-    margin: 12px 0px 0px 142px;
-  }
-
-  .cnt-txt {
-    margin: 12px 0px 0px 142px;
-  }
-
-  .ic-container {
-    margin: 25px 0px 0px 142px;
-  }
-
   .btn-container {
-    margin: 36px 0px 0px 142px;
+    margin: 12px 0 0 0;
   }
 
   .rgt-container {
@@ -480,7 +467,7 @@ hr {
   }
 
   .lg {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .lg-lst-main-container {
@@ -501,30 +488,27 @@ hr {
   }
 
   .txt-lst-lg {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .container-contact {
     margin: 142px 250px;
   }
 
-  .btn-container {
-    margin: 12px 0px 0px 0px;
-  } 
   .contact-btn {
-    margin: 36px 0px 0px 36%;
+    margin: 36px 0 0 36%;
   }
 
-  .see-project{
-    margin: 12px 0px 0px 0px;
+  .see-project {
+    margin: 12px 0 0 0;
   }
 
   .see-me {
-    margin: 12px 0px 0px 142px;
+    margin: 12px 0 0 142px;
   }
 
-  .project-container-1:hover{
-    border: 1px solid #A7AEFF;
+  .project-container-1:hover {
+    border: 1px solid #a7aeff;
     box-shadow: 4px 2px 10px rgb(214, 214, 214);
   }
 }
