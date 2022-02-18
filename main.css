@@ -504,11 +504,10 @@ hr {
     margin-left: 0px;
   }
 
-  .container-contact{
+  .container-contact {
     margin: 142px 250px;
   }
-  .btn-container {
+  .contact-btn {
     margin: 36px 0px 0px 36%;
+  }
 }
-}
-
