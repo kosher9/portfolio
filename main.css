@@ -507,7 +507,24 @@ hr {
   .container-contact {
     margin: 142px 250px;
   }
+
+  .btn-container {
+    margin: 12px 0px 0px 0px;
+  } 
   .contact-btn {
     margin: 36px 0px 0px 36%;
+  }
+
+  .see-project{
+    margin: 12px 0px 0px 0px;
+  }
+
+  .see-me {
+    margin: 12px 0px 0px 142px;
+  }
+
+  .project-container-1:hover{
+    border: 1px solid #A7AEFF;
+    box-shadow: 4px 2px 10px rgb(214, 214, 214);
   }
 }
