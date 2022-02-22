@@ -5,6 +5,10 @@
 > A great web site to show off my works
 Visit my website [here](https://kosher9.github.io/)
 
+Take a look at the [mobile](portfolio/img/scshot_1.png) & [desktop](portfolio/img/scshot_2.png) version
+
+
+
 ## Built With
 
 - HTML & CSS
