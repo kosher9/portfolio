@@ -45,6 +45,10 @@ ul {
   color: #6070ff;
 }
 
+.mobile-menu-close-btn > a {
+  color: white;
+}
+
 .mobile-menu-container{
   display: flex;
   flex-direction: column;
