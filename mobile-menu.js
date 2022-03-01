@@ -15,13 +15,13 @@ menuClose.addEventListener('click', () => {
 });
 
 itemPort.addEventListener('click', () => {
-    menuList.style.display = 'none';
-})
+  menuList.style.display = 'none';
+});
 
 itemAbout.addEventListener('click', () => {
-    menuList.style.display = 'none';
-})
+  menuList.style.display = 'none';
+});
 
 itemContact.addEventListener('click', () => {
-    menuList.style.display = 'none';
-})
+  menuList.style.display = 'none';
+});
