@@ -76,6 +76,15 @@ ul {
   line-height: 44px;
 }
 
+.project-ctn-1{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: rgba(96, 112, 255, 0.9);
+  width: 100%;
+  height: 100vh;
+}
+
 .nav-menu {
   display: none;
 }
@@ -466,6 +475,10 @@ hr {
     row-gap: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .prjct-lg.rb {
+    display: block;
   }
 
   .img-1-container {
