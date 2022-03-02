@@ -157,9 +157,20 @@ function createDom(){
         /* this is the popup window (modal) */
         button.addEventListener('click', () => {
            const modal = document.querySelector('.modal-container');
-  
-           const title = document.querySelector('.prjct-name');
+           const title = document.querySelector('.modal-prj-name');
+           const img = document.getElementById('modalImg'); 
+           const desc = document.getElementById('project-desc');
+           const lgItem = document.getElementById('modal-lg');
+           const btnSeeLive = document.getElementById('btn-see-live'); 
+           const btnSeesource = document.getElementById('btn-see-source');
+           
            title.textContent = projects[project].name;
+           desc.innerHTML = projects[project].description;
+           console.log(desc);
+           
+           img.src = "/img/Portfolio_"+(++project)+".png";
+           project--;
+
            modal.style.display = 'block';   
             
         })
