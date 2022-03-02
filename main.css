@@ -565,3 +565,46 @@ hr {
     box-shadow: 4px 2px 10px rgb(214, 214, 214);
   }
 }
+/* modal window */
+.modal-container {
+  position: fixed;
+  display: none;
+  margin: 2rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close-btn {
+  color: #67798E;
+ align-self: flex-end;
+}
+.sub-title-container {
+  display: flex;
+}
+.modal-content > img {
+  width: 311px;
+  height: 220px;
+}
+
+.btn-modal {
+  color: #396DF2;
+  width: auto;
+  border: 1px solid #396DF2;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 1rem;
+}
+.modal-btn-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  background-color: #172b4d;
+}
