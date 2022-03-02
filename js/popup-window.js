@@ -77,6 +77,7 @@ function createDom(){
 
         let section = document.createElement('section')
         section.className = 'project-container-1 ct1'
+        section.id = 'portfolio'
 
         let divContainer = document.createElement('div')
         divContainer.className = 'img-1-container'
