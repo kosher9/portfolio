@@ -456,10 +456,16 @@ hr {
   width: 80%;
 }
 
+.modal-content > img {
+  width: 100%;
+  height: auto;
+}
+
 .modal-close-btn {
   color: #67798e;
   align-self: center;
 }
+
 .sub-title-container {
   display: grid;
   align-content: center;
@@ -469,12 +475,11 @@ hr {
   grid-template-columns: auto auto auto auto auto;
   justify-content: space-between;
 }
-.modal-content > img {
-  width: 311px;
-  height: 220px;
-}
 
 .btn-modal {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
   color: #396df2;
   width: auto;
   border: 1px solid #396df2;
@@ -485,15 +490,29 @@ hr {
   padding: 1rem;
 }
 
-.top-container{
+.btn-modal .icon_1 {
+  background: url(img/Icon.svg) no-repeat;
+  float: right;
+  width: 20px;
+  height: auto;
+}
+
+.btn-modal .icon_2 {
+  background: url(img/Group.svg) no-repeat;
+  float: right;
+  width: 20px;
+  height: auto;
+}
+
+.top-container {
   display: flex;
   place-content: space-between;
 }
 
 .modal-btn-container {
   display: flex;
+  margin-top: 49px;
   justify-content: space-around;
-  height: 100px;
 }
 
 @media screen and (min-width: 992px) {

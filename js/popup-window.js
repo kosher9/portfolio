@@ -173,6 +173,10 @@ function createDom(){
            year.textContent = projects[project].role.year
            desc.innerHTML = projects[project].description
            
+           while (lgItem.lastElementChild) {
+            lgItem.removeChild(lgItem.lastElementChild);
+          }
+          
            for(let tech in technologies){
                 let lg = document.createElement('li')
                 if(technologies[tech] == 'Ruby on rails'){
