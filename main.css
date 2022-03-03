@@ -466,6 +466,20 @@ hr {
   align-self: center;
 }
 
+.modal-close-btn:hover,
+.modal-close.btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: rgba(219, 229, 250, 0.486);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .sub-title-container {
   display: grid;
   align-content: center;
@@ -516,6 +530,34 @@ hr {
 }
 
 @media screen and (min-width: 992px) {
+  .modal-content {
+    padding: 20px;
+    width: 50%;
+  }
+
+  .sub-title-container {
+    width: 50%;
+  }
+
+  .extra-info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .prjct-descr {
+    width: 50%;
+  }
+
+  .extra-info-rght {
+    width: 50%;
+  }
+
+  .container-lg {
+    flex-wrap: wrap;
+  }
+
   .fsthead {
     margin: 0 260px 0 142px;
   }
