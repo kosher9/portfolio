@@ -156,20 +156,37 @@ function createDom(){
 
         /* this is the popup window (modal) */
         button.addEventListener('click', () => {
-           const modal = document.querySelector('.modal-container');
-           const title = document.querySelector('.modal-prj-name');
-           const img = document.getElementById('modalImg'); 
-           const desc = document.getElementById('project-desc');
-           const lgItem = document.getElementById('modal-lg');
-           const btnSeeLive = document.getElementById('btn-see-live'); 
-           const btnSeesource = document.getElementById('btn-see-source');
+           let modal = document.querySelector('.modal-container');
+           let title = document.querySelector('.modal-prj-name');
+           let img = document.getElementById('modalImg');
+           let comp = document.getElementById('comp')
+           let role = document.getElementById('role')
+           let year = document.getElementById('year')
+           let desc = document.getElementById('project-desc');
+           let lgItem = document.getElementById('modal-lg');
+           let btnSeeLive = document.getElementById('btn-see-live'); 
+           let btnSeesource = document.getElementById('btn-see-source');
            
            title.textContent = projects[project].name;
-           desc.innerHTML = projects[project].description;
+           comp.textContent = projects[project].role.company
+           role.textContent = projects[project].role.job
+           year.textContent = projects[project].role.year
+           desc.innerHTML = projects[project].description
+           
+           for(let tech in technologies){
+                let lg = document.createElement('li')
+                if(technologies[tech] == 'Ruby on rails'){
+                    lg.className = 'prjct-lg rb'
+                } else {
+                    lg.className = 'prjct-lg'
+                }
+                lg.textContent = technologies[tech]
+                lgItem.appendChild(lg)
+           }
+
            console.log(desc);
            
-           img.src = "/img/Portfolio_"+(++project)+".png";
-           project--;
+           img.src = projects[project].image;
 
            modal.style.display = 'block';   
             
