@@ -90,7 +90,8 @@ ul {
 }
 
 .hero {
-  background-image: url("img/header-shapes-mobile.png"),
+  background-image:
+    url("img/header-shapes-mobile.png"),
     url("img/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
@@ -408,7 +409,8 @@ hr {
 }
 
 .contact {
-  background-image: url("img/header-shapes-mobile.png"),
+  background-image:
+    url("img/header-shapes-mobile.png"),
     url("img/contact_me.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
@@ -473,13 +475,6 @@ hr {
   cursor: pointer;
 }
 
-.btn-modal:hover,
-.btn-modal:focus {
-  background-color: rgba(219, 229, 250, 0.486);
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .sub-title-container {
   display: grid;
   align-content: center;
@@ -498,10 +493,17 @@ hr {
   width: auto;
   border: 1px solid #396df2;
   border-radius: 5px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 15px;
   line-height: 20px;
   padding: 1rem;
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: rgba(219, 229, 250, 0.486);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-modal .icon_1 {

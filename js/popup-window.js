@@ -1,239 +1,220 @@
-const projects = 
-[
-        {
-            name: 'Tonic',
-            role: {
-                company: 'CANOPY',
-                job: 'Back End Dev',
-                year: 2015
-            },
-            description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-            image: 'img/Portfolio_1.png',
-            technologies: ['html', 'css', 'JavaScript'],
-            live_version: true,
-            source: true,
-        },
-        {
-            name: 'Multi-Post Stories',
-            role: {
-                company: 'CANOPY',
-                job: 'Back End Dev',
-                year: 2015
-            },
-            description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-            image: 'img/Portfolio_2.png',
-            technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
-            live_version: true,
-            source: true,
-        },
-        {
-            name: 'Multi-Post Stories',
-            role: {
-                company: 'CANOPY',
-                job: 'Back End Dev',
-                year: 2015
-            },
-            description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-            image: 'img/Portfolio_3.png',
-            technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
-            live_version: true,
-            source: true,
-        },
-        {
-            name: 'CANOPY',
-            role: {
-                company: 'CANOPY',
-                job: 'Back End Dev',
-                year: 2015
-            },
-            description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-            image: 'img/Portfolio_4.png',
-            technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
-            live_version: true,
-            source: true,
-        }
-    
-]
+const projects = [
+  {
+    name: 'Tonic',
+    role: {
+      company: 'CANOPY',
+      job: 'Back End Dev',
+      year: 2015,
+    },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Portfolio_1.png',
+    technologies: ['html', 'css', 'JavaScript'],
+    live_version: true,
+    source: true,
+  },
+  {
+    name: 'Multi-Post Stories',
+    role: {
+      company: 'CANOPY',
+      job: 'Back End Dev',
+      year: 2015,
+    },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Portfolio_2.png',
+    technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
+    live_version: true,
+    source: true,
+  },
+  {
+    name: 'Multi-Post Stories',
+    role: {
+      company: 'CANOPY',
+      job: 'Back End Dev',
+      year: 2015,
+    },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Portfolio_3.png',
+    technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
+    live_version: true,
+    source: true,
+  },
+  {
+    name: 'CANOPY',
+    role: {
+      company: 'CANOPY',
+      job: 'Back End Dev',
+      year: 2015,
+    },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Portfolio_4.png',
+    technologies: ['html', 'Ruby on rails', 'css', 'JavaScript'],
+    live_version: true,
+    source: true,
+  },
+
+];
 
 function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
-      
 
+const bigSection = document.createElement('section');
 
-window.addEventListener('load', (event) => { 
+function createDom() {
+  const hero = document.getElementById('hero');
 
-    createDom()
+  bigSection.className = 'grid-project';
 
-})
+  Object.keys(projects).forEach((key) => {
+    const section = document.createElement('section');
+    section.className = 'project-container-1 ct1';
+    section.id = 'portfolio';
 
+    const divContainer = document.createElement('div');
+    divContainer.className = 'img-1-container';
 
+    const img = document.createElement('img');
+    img.className = 'img-size';
+    img.src = projects[key].image;
 
-let bigSection = document.createElement('section');
-function createDom(){
+    const divInfo = document.createElement('div');
+    divInfo.className = 'prjt-info';
 
-    var hero = document.getElementById('hero');
+    const projectTitle = document.createElement('h2');
+    projectTitle.className = 'prjct left';
+    projectTitle.textContent = projects[key].name;
 
-    bigSection.className = 'grid-project'
+    const divGridContainer = document.createElement('div');
+    divGridContainer.className = 'prjct grid-container';
 
-    for(let project in projects){
+    const companyName = document.createElement('h4');
+    companyName.className = 'prjct-name';
+    companyName.textContent = projects[key].role.company;
 
-        let section = document.createElement('section')
-        section.className = 'project-container-1 ct1'
-        section.id = 'portfolio'
+    const dotContainer = document.createElement('div');
+    dotContainer.className = 'dot-container';
 
-        let divContainer = document.createElement('div')
-        divContainer.className = 'img-1-container'
+    const dot = document.createElement('img');
+    dot.className = 'dot';
+    dot.src = 'img/counter.png';
 
-        let img = document.createElement('img')
-        img.className = 'img-size'
-        img.src = projects[project].image
+    const role = document.createElement('h4');
+    role.className = 'prjct-role';
+    role.textContent = projects[key].role.job;
 
-        let divInfo = document.createElement('div')
-        divInfo.className = 'prjt-info'
+    const scDotContainer = document.createElement('div');
+    scDotContainer.className = 'dot-container';
 
-        let projectTitle = document.createElement('h2')
-        projectTitle.className = 'prjct left'
-        projectTitle.textContent= projects[project].name
+    const scDot = document.createElement('img');
+    scDot.className = 'dot';
+    scDot.src = 'img/counter.png';
 
-        let divGridContainer = document.createElement('div')
-        divGridContainer.className = 'prjct grid-container'
-        
-        let companyName = document.createElement('h4')
-        companyName.className = 'prjct-name'
-        companyName.textContent = projects[project].role.company
+    const year = document.createElement('h4');
+    year.className = 'prjct-year';
+    year.textContent = projects[key].role.year;
 
-        let dotContainer = document.createElement('div')
-        dotContainer.className = 'dot-container'
+    const description = document.createElement('p');
+    description.className = 'prjct prjct-descr';
+    description.textContent = projects[key].description;
 
-        let dot = document.createElement('img')
-        dot.className = 'dot'
-        dot.src = 'img/counter.png'
-        
-        let role = document.createElement('h4')
-        role.className = 'prjct-role'
-        role.textContent = projects[project].role.job
+    const techs = document.createElement('ul');
+    techs.className = 'prjct container-lg';
 
-        let scDotContainer = document.createElement('div')
-        scDotContainer.className = 'dot-container'
+    const { technologies } = projects[key];
 
-        let scDot = document.createElement('img')
-        scDot.className = 'dot'
-        scDot.src = 'img/counter.png'
+    Object.keys(technologies).forEach((key) => {
+      const lg = document.createElement('li');
+      if (technologies[key] === 'Ruby on rails') {
+        lg.className = 'prjct-lg rb';
+      } else {
+        lg.className = 'prjct-lg';
+      }
+      lg.textContent = technologies[key];
+      techs.appendChild(lg);
+    });
 
-        let year = document.createElement('h4')
-        year.className = 'prjct-year'
-        year.textContent = projects[project].role.year
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'btn-container';
 
-        let description = document.createElement('p')
-        description.className = 'prjct prjct-descr'
-        description.textContent = projects[project].description
+    const button = document.createElement('button');
+    button.className = 'prjct btn see-project';
+    button.type = 'button';
+    button.id = 'btnSeeProject';
+    button.innerHTML = 'See Project';
 
-        let techs = document.createElement('ul')
-        techs.className = 'prjct container-lg'
-        
-        let technologies = projects[project].technologies
+    /* this is the popup window (modal) */
+    button.addEventListener('click', () => {
+      const modal = document.querySelector('.modal-container');
+      const title = document.querySelector('.modal-prj-name');
+      const img = document.getElementById('modalImg');
+      const comp = document.getElementById('comp');
+      const role = document.getElementById('role');
+      const year = document.getElementById('year');
+      const desc = document.getElementById('project-desc');
+      const lgItem = document.getElementById('modal-lg');
 
-        for(let tech in technologies){
-            let lg = document.createElement('li')
-            if(technologies[tech] == 'Ruby on rails'){
-                lg.className = 'prjct-lg rb'
-            } else {
-                lg.className = 'prjct-lg'
-            }
-            lg.textContent = technologies[tech]
-            techs.appendChild(lg)
+      title.textContent = projects[key].name;
+      comp.textContent = projects[key].role.company;
+      role.textContent = projects[key].role.job;
+      year.textContent = projects[key].role.year;
+      desc.innerHTML = projects[key].description;
+
+      while (lgItem.lastElementChild) {
+        lgItem.removeChild(lgItem.lastElementChild);
+      }
+
+      Object.keys(technologies).forEach((key) => {
+        const lg = document.createElement('li');
+        if (technologies[key] === 'Ruby on rails') {
+          lg.className = 'prjct-lg rb';
+        } else {
+          lg.className = 'prjct-lg';
         }
+        lg.textContent = technologies[key];
+        lgItem.appendChild(lg);
+      });
 
-        let buttonContainer = document.createElement('div')
-        buttonContainer.className = 'btn-container'
+      img.src = projects[key].image;
 
-        let button = document.createElement('button')
-        button.className = 'prjct btn see-project'
-        button.type = 'button'
-        button.id = 'btnSeeProject'
-        button.innerHTML = 'See Project'
+      modal.style.display = 'block';
+    });
 
-        /* this is the popup window (modal) */
-        button.addEventListener('click', () => {
-           let modal = document.querySelector('.modal-container');
-           let title = document.querySelector('.modal-prj-name');
-           let img = document.getElementById('modalImg');
-           let comp = document.getElementById('comp')
-           let role = document.getElementById('role')
-           let year = document.getElementById('year')
-           let desc = document.getElementById('project-desc');
-           let lgItem = document.getElementById('modal-lg');
-           let btnSeeLive = document.getElementById('btn-see-live'); 
-           let btnSeesource = document.getElementById('btn-see-source');
-           
-           title.textContent = projects[project].name;
-           comp.textContent = projects[project].role.company
-           role.textContent = projects[project].role.job
-           year.textContent = projects[project].role.year
-           desc.innerHTML = projects[project].description
-           
-           while (lgItem.lastElementChild) {
-            lgItem.removeChild(lgItem.lastElementChild);
-          }
-          
-           for(let tech in technologies){
-                let lg = document.createElement('li')
-                if(technologies[tech] == 'Ruby on rails'){
-                    lg.className = 'prjct-lg rb'
-                } else {
-                    lg.className = 'prjct-lg'
-                }
-                lg.textContent = technologies[tech]
-                lgItem.appendChild(lg)
-           }
+    // Append element to parent
 
-           console.log(desc);
-           
-           img.src = projects[project].image;
+    bigSection.appendChild(section);
+    section.appendChild(divContainer);
+    divContainer.appendChild(img);
 
-           modal.style.display = 'block';   
-            
-        })
-    
-   
+    section.appendChild(divInfo);
 
-        // Append element to parent
+    divInfo.appendChild(projectTitle);
+    divInfo.appendChild(divGridContainer);
 
-        bigSection.appendChild(section)
-        section.appendChild(divContainer)
-        divContainer.appendChild(img)
+    divGridContainer.appendChild(companyName);
+    divGridContainer.appendChild(dotContainer);
+    dotContainer.appendChild(dot);
+    divGridContainer.appendChild(role);
+    divGridContainer.appendChild(scDotContainer);
+    scDotContainer.appendChild(scDot);
+    divGridContainer.appendChild(year);
 
-        section.appendChild(divInfo)
+    divInfo.appendChild(description);
 
-        divInfo.appendChild(projectTitle)
-        divInfo.appendChild(divGridContainer)
+    divInfo.appendChild(techs);
 
-        divGridContainer.appendChild(companyName)
-        divGridContainer.appendChild(dotContainer)
-        dotContainer.appendChild(dot)
-        divGridContainer.appendChild(role)
-        divGridContainer.appendChild(scDotContainer)
-        scDotContainer.appendChild(scDot)
-        divGridContainer.appendChild(year)
+    divInfo.appendChild(buttonContainer);
+    buttonContainer.appendChild(button);
+  });
 
-        divInfo.appendChild(description)
-
-        divInfo.appendChild(techs)
-
-        divInfo.appendChild(buttonContainer)
-        buttonContainer.appendChild(button)
-
-    }
-
-    insertAfter(hero, bigSection)
-
+  insertAfter(hero, bigSection);
 }
 
-const btnClose = document.querySelector('.modal-close-btn'); 
+const btnClose = document.querySelector('.modal-close-btn');
 const modal = document.querySelector('.modal-container');
 btnClose.addEventListener('click', () => {
-    modal.style.display = 'none';
-    
-})
+  modal.style.display = 'none';
+});
 
+window.addEventListener('load', () => {
+  createDom();
+});
