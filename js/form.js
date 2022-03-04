@@ -34,7 +34,6 @@ function checkEmailField(){
     } else {
         errorState = "valid"
     }
-    console.log(errorState)
 }
 
 function validateForm(){
@@ -46,11 +45,9 @@ function validateForm(){
         } else {
             error.textContent = "Please fill the email field!"
         }
-        console.log("false")
         return false
         
     } else {
-        console.log("true")
         return true
     }
 }
@@ -58,6 +55,9 @@ function validateForm(){
 // This defines what happens when the user types in the field
 addEvent(email, "input", function(){
     checkEmailField()
+    if(error.textContent != ""){
+        error.textContent = ""
+    }
 })
 
 // This defines what happens when the user tries to submit the data
