@@ -8,8 +8,6 @@ function addEvent(element, event, callback) {
   element[`on${event}`] = function (e) {
     let output = callback(e);
 
-    // A callback that returns `false` stops the callback chain
-    // and interrupts the execution of the event callback.
     if (output === false) return false;
 
     if (typeof previousEventCallBack === 'function') {
