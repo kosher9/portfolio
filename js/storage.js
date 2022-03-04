@@ -1,5 +1,5 @@
 const userNameField = document.getElementById('name');
-const userEmailField = document.getElementById('email');
+const userEmailField = document.getElementById('emal');
 const messageField = document.getElementById('message');
 
 const userInfo = {
@@ -61,17 +61,17 @@ function addEvent(element, event, callback) {
 
 addEvent(userNameField, 'input', () => {
   userInfo.name = userNameField.value;
-  updateLocalStorage();
+  updateLocalStorage;
 });
 
 addEvent(userEmailField, 'input', () => {
   userInfo.email = userEmailField.value;
-  updateLocalStorage();
+  updateLocalStorage;
 });
 
 addEvent(messageField, 'input', () => {
   userInfo.message = messageField.value;
-  updateLocalStorage();
+  updateLocalStorage;
 });
 
 window.addEventListener('load', () => {
