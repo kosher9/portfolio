@@ -532,13 +532,13 @@ hr {
 }
 
 .error {
-  width  : 100%;
-  padding: auto;
+  width: 100%;
+  text-align: center;
   align-content: center;
   font-size: 80%;
   color: white;
   background-color: rgb(247, 70, 70);
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
