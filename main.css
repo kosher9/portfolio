@@ -531,6 +531,17 @@ hr {
   justify-content: space-around;
 }
 
+.error {
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  font-size: 80%;
+  color: white;
+  background-color: rgb(247, 70, 70);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 992px) {
   .modal-content {
     padding: 20px;

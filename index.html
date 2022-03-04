@@ -40,10 +40,11 @@
       <div class="extra-info-container">
 
         <p id="project-desc" class="prjct prjct-descr">Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+          printer
           took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
           but also the leap into electronic typesetting, remaining essent</p>
-  
+
         <div class="extra-info-rght">
           <ul id="modal-lg" class="prjct container-lg">
           </ul>
@@ -204,12 +205,14 @@
       <p class="ctct-me">If you have an application you are interested in developing, a feature that you need built or a
         project that
         needs coding. I’d love to help with it </p>
-      <form class="container-form" action="https://formspree.io/f/mrgjqpvb" method="post">
+      <form class="container-form" action="https://formspree.io/f/mrgjqpvb" method="post" novalidate>
 
         <input class="text-area" type="text" name="name" value="Yeremias" maxlength="30" required placeholder="name">
-        <input class="text-area" type="email" name="email" value="natajayanj14@gmail.com" required placeholder="email">
+        <input id="email" class="text-area" type="email" name="email" value="natajayanj14@gmail.com" required
+          placeholder="email">
         <textarea class="text-area large" placeholder="Write your message" maxlength="500" required></textarea>
         <input class="btn-container contact-btn" type="submit" name="submit" value="Get In Touch">
+        <span class="error" aria-live="polite"></span>
 
       </form>
 
@@ -218,6 +221,7 @@
   </section>
 
   <script src="js/mobile-menu.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

@@ -3,16 +3,14 @@
 # Portfolio
 
 > A great web site to show off my works
-Visit my website [here](https://kosher9.github.io/)
 
 ## live demo
 [live demo](https://kosher9.github.io/)
 
 
-
 ## Built With
 
-- HTML & CSS
+- HTML, CSS & JavaScript
 
 ## Authors
 
@@ -24,7 +22,9 @@ Visit my website [here](https://kosher9.github.io/)
 
 ## Contributors
 - GitHub: [@kosher9](https://github.com/misheck12)
-- GitHub: [@kosher9](https://github.com/Theophileaseh)
+- GitHub: [@Theophileaseh](https://github.com/Theophileaseh)
+- GitHub: [@maen1980](https://github.com/maen1980)
+
 
 ## Getting Started
 
