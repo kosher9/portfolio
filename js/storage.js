@@ -64,8 +64,6 @@ addEvent(userNameField, 'input', () => {
 
     userInfo.name = userNameField.value;
     updateLocalStorage()
-    console.log(userInfo.name)
-  
 });
   
 addEvent(userEmailField, 'input', () => {
@@ -73,14 +71,12 @@ addEvent(userEmailField, 'input', () => {
     userInfo.email = userEmailField.value
     // localStorage.setItem('lname', userInfo.email)
     updateLocalStorage()
-    console.log(userInfo.email)
 });
   
 addEvent(messageField, 'input', () => {
   
     userInfo.message = messageField.value
     updateLocalStorage()
-    console.log(messageField.value)
 });
   
 window.addEventListener('load', () => {
@@ -89,5 +85,4 @@ window.addEventListener('load', () => {
   
     loadLocalStorage()
   
-    console.log("life")
 });
