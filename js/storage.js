@@ -11,13 +11,13 @@ let userInfo = {
 
 function checkUserNull(){
     if(userInfo.name === null){
-        userInfo.name = ""
+        userInfo.name = "";
     } 
     if(userInfo.email === null){
-        userInfo.email = ""
+        userInfo.email = "";
     }
     if(userInfo.message === null){
-        userInfo.message = ""
+        userInfo.message = "";
     }
 }
 
@@ -30,20 +30,20 @@ function createLocalStorage(){
 }
 
 function loadLocalStorage(){
-    userNameField.value = localStorage.getItem('name')
-    userEmailField.value = localStorage.getItem('email')
-    messageField.value = localStorage.getItem('message')
+    userNameField.value = localStorage.getItem('name');
+    userEmailField.value = localStorage.getItem('email');
+    messageField.value = localStorage.getItem('message');
 }
   
 function updateLocalStorage(){
-    localStorage.setItem('name', userInfo.name)
-    localStorage.setItem('email', userInfo.email)
-    localStorage.setItem('message', userInfo.message)
+    localStorage.setItem('name', userInfo.name);
+    localStorage.setItem('email', userInfo.email);
+    localStorage.setItem('message', userInfo.message);
 }
 
-checkUserNull()
+checkUserNull();
 
-createLocalStorage()
+createLocalStorage();
 
 function addEvent(element, event, callback) {
     const previousEventCallBack = element[`on${event}`];
@@ -63,26 +63,23 @@ function addEvent(element, event, callback) {
 addEvent(userNameField, 'input', () => {
 
     userInfo.name = userNameField.value;
-    updateLocalStorage()
+    updateLocalStorage();
 });
   
 addEvent(userEmailField, 'input', () => {
-  
-    userInfo.email = userEmailField.value
-    // localStorage.setItem('lname', userInfo.email)
-    updateLocalStorage()
+    userInfo.email = userEmailField.value;
+    updateLocalStorage();
 });
   
 addEvent(messageField, 'input', () => {
-  
-    userInfo.message = messageField.value
-    updateLocalStorage()
+    userInfo.message = messageField.value;
+    updateLocalStorage();
 });
   
 window.addEventListener('load', () => {
 
-    updateLocalStorage()
+    updateLocalStorage();
   
-    loadLocalStorage()
+    loadLocalStorage();
   
 });
