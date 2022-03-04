@@ -1,31 +1,31 @@
-let userNameField = document.getElementById('name');
-let userEmailField = document.getElementById('email');
-let messageField = document.getElementById('message');
+const userNameField = document.getElementById('name');
+const userEmailField = document.getElementById('email');
+const messageField = document.getElementById('message');
 
 let userInfo = {
-  name: "",
-  email: "",
-  message: "",
+  name: '',
+  email: '',
+  message: '',
 };
+
+function loadLocalStorage() {
+  const data = localStorage.getItem('user');
+  userInfo = JSON.parse(data);
+  userNameField.value = userInfo.name;
+  userEmailField.value = userInfo.email;
+  messageField.value = userInfo.message;
+}
 
 function createLocalStorage() {
   if (localStorage.getItem('user') === null) {
     localStorage.setItem('user', JSON.stringify(userInfo));
   } else {
-    loadLocalStorage()
+    loadLocalStorage();
   }
 }
 
-function loadLocalStorage() {
-  let data = localStorage.getItem('user')
-  userInfo = JSON.parse(data)
-  userNameField.value = userInfo.name
-  userEmailField.value = userInfo.email
-  messageField.value = userInfo.message
-}
-
 function updateLocalStorage() {
-  localStorage.setItem('user', JSON.stringify(userInfo))
+  localStorage.setItem('user', JSON.stringify(userInfo));
 }
 
 createLocalStorage();
