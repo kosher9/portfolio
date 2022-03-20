@@ -93,7 +93,7 @@ ul {
   background-image: url("img/header-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-radius: 0 0 0 60px;
   padding-top: 114px;
   padding-bottom: 114px;
@@ -409,11 +409,10 @@ hr {
 }
 
 .contact {
-  background-image:
-    url("img/header-shapes-mobile.svg");
+  background-image: url("img/header-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: 75%;
-  background-color: #6070FF;
+  background-color: #6070ff;
   padding-top: 114px;
   padding-bottom: 114px;
   padding-left: 24px;
