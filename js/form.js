@@ -5,14 +5,14 @@ let errorState = 'valid';
 
 function addEvent(element, event, callback) {
   const previousEventCallBack = element[`on${event}`];
-  element[`on${event}`] = function (e) {
+  element[`on${event}`] = (e) => {
     let output = callback(e);
 
-    if (output === false) return false;
+    if (output === false) { return false; }
 
     if (typeof previousEventCallBack === 'function') {
       output = previousEventCallBack(e);
-      if (output === false) return false;
+      if (output === false) { return false; }
     }
     return false;
   };
