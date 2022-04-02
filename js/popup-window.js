@@ -52,6 +52,20 @@ const projects = [
     source: true,
   },
 
+  {
+    name: 'ToDo List',
+    role: {
+      company: 'TICNRT',
+      job: 'Full-Stack Developer',
+      year: 2022,
+    },
+    description: 'A daily selection of personnal tasks; no accounts or sign-ups required.',
+    image: 'img/new_project.png',
+    technologies: ['html', 'css', 'JavaScript', 'WebPack'],
+    live_version: true,
+    source: true,
+  },
+
 ];
 
 function insertAfter(referenceNode, newNode) {
