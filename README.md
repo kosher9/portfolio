@@ -5,7 +5,7 @@
 > A great web site to show off my works
 
 ## live demo
-[live demo](https://kosher9.github.io/)
+[live demo](https://kosher9.github.io/portfolio/)
 
 
 ## Built With
