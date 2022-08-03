@@ -4,6 +4,9 @@
 
 > A great web site to show off my works
 
+# Preview
+![preview](preview.png)
+
 ## live demo
 [live demo](https://kosher9.github.io/portfolio/)
 
