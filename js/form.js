@@ -5,14 +5,14 @@ let errorState = 'valid';
 
 function addEvent(element, event, callback) {
   const previousEventCallBack = element[`on${event}`];
-  element[`on${event}`] = (e) => {
+  element[`on${event}`] = function (e) {
     let output = callback(e);
 
-    if (output === false) { return false; }
+    if (output === false) return false;
 
     if (typeof previousEventCallBack === 'function') {
       output = previousEventCallBack(e);
-      if (output === false) { return false; }
+      if (output === false) return false;
     }
     return false;
   };
@@ -58,6 +58,7 @@ addEvent(email, 'input', () => {
 
 // This defines what happens when the user tries to submit the data
 form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
   if (validateForm() === false) {
     evt.preventDefault();
     window.history.back();
